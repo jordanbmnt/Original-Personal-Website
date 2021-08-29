@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: EagleLake-Regular
+font link: https://fonts.google.com/specimen/Eagle+Lake
+font author: Astigmatic
+font author site: http://www.astigmatic.com/
+
+
+icon designer: Yaroslav Samoylov
+icon designer link: /bravebros
+        
+{"bg":"#2B282C","icon":"#746657","font":"#ffffff","slogan":"#ffffff"}
+      

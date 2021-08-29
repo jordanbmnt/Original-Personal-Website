@@ -1,0 +1,84 @@
+html{
+
+}
+
+body{
+    display: flex;
+    flex-flow: column;
+}
+
+
+/* Contact////////////////////////////////// */
+
+.container{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    max-width: 300px;
+    width: 100%;
+    padding: 60px 45px;
+    min-height: 300px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 3em;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+.container > img{
+    border-radius: 50px;
+    width: 300px;
+    margin: auto;
+    box-shadow:  6px 6px 18px #242424,
+                -6px -6px 18px #343434,
+                inset 6px 6px 18px #242424,
+                inset -6px -6px 18px #343434;
+}
+
+#section-1{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    min-height: 600px;
+    background: rgb(183, 235, 209);
+    background: linear-gradient(180deg, rgb(183, 235, 209) 22%, #96f7d29c 75%);
+    background-size:cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+#section-1{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    min-height: 600px;
+    background: rgb(183, 235, 209);
+    background: linear-gradient(180deg, rgb(183, 235, 209) 22%, #96f7d29c 75%);
+    background-size:cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+#section-2{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    min-height: 650px;
+    background: rgb(36,36,36);
+    background: linear-gradient(180deg, #96f7d29c 22%, rgba(231,179,179,1) 75%);
+    background-size:cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+#section-3{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    min-height: 650px;
+    background: rgb(231,179,179);
+    background: linear-gradient(180deg, rgba(231,179,179,1) 22%, rgba(254,176,98,1) 75%);
+    background-size:cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}

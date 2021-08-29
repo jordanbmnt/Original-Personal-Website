@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="dropdown" >
+
+        <!-- Dropdown Button -->
+        <button class="dropbtn"> <img src="icons/menu_black_24dp.svg" alt=""> </button>
+        
+        <!-- Top Header -->
+        <!-- <div class="topHeader"> -->
+            <!-- Main Menu -->
+            
+            <div  class="dropdown-content">
+
+                <!-- Logo img -->
+                <div class="logo">
+                    <a href="index.html"><img src="images/Untitled.png"></a>
+                </div>
+                <!-- <div class="links">
+                    <a href="stylePage.html">Styles</a>
+                </div> -->
+                <div class="links">
+                    <a href="previousSites.html">Pevious sites</a>
+                </div>
+                <div class="links">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="links">
+                    <a href="contact.html">Contact</a>
+                </div>
+                
+            </div>    
+            
+        <!-- </div> -->
+
+        <!-- <div id="spacer">
+        </div> -->
+    </header>
+
+    <!-- My tools Block -->
+    <div class="main01">
+        <!-- Intro section for main01 -->
+        <h1 id="main01-intro-h1">
+            Welcome to <span class="makeRed"> my site</span>
+        </h1>
+        <h3 id="main01-intro-h3">
+            I am a Junior <span class="makeRed">Software</span>  Developer
+        </h3>
+        <h5 id="main01-intro-h5">
+            This is a breif summary of the tools i am familiar with, the sites i have thus far created as well as some <span class="makeRed">personal information</span> and my means of contact.
+        </h5>
+
+        <!-- Tabs section for main01 -->
+        <div class="main01-tab">
+            <button class="tablinks" onclick="openTab(event, 'Tools')" id="defaultOpen">Tools</button>
+            <button class="tablinks" onclick="openTab(event, 'Languages')">Languages</button>
+        </div>
+        
+        <!-- Tab content -->
+        <div id="Tools" class="tabcontent">
+            
+            <!-- Tools Table -->
+            <div id="tools-container">
+                <!-- Info heading -->
+                <h4>
+                    Coding environments that I am thus far familiar with
+                </h4>
+                <!-- Images grid -->
+                <div class="codingImg" id="tools-imgGrid">
+                    <img src="images/VScode.png">
+                    <img src="images/sql.png">
+                    <img src="images/pycharm.png">
+                    <img src="images/wp.png">
+                </div>
+            </div>
+        </div>
+        
+        <div id="Languages" class="tabcontent">
+            
+            <!-- Language Table -->
+            <div id="lang-container">
+                <!-- Info heading -->
+                <h4>
+                    Current Languages that I am thus far familiar with
+                </h4>
+                <!-- Images grid -->
+                <div class="codingImg" id="lang-imgGrid">
+                    <img src="images/HTML5.png">
+                    <img src="images/css.png">
+                    <img src="images/js.png">
+                    <img src="images/python.png">
+                    <img src="images/sqllogo.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- My websites Block -->
+    <div class="main02">
+
+        <!-- YinYang Break Block -->
+        <div class="self">
+                <!-- Block for Side pic -->
+                <div id="yinyangPic">
+                    <img src="images/yingyang.png">
+                </div>
+    
+                <!-- Block for personal info -->
+                <div id="personalInfo">
+                    <h3 id="personalInfo-h">
+                        Personal Profile
+                    </h3>
+                    <p id="personalInfo-p">
+                        I am enthusiastic, motivated and eager to learn and explore different fields. So far I have completed my matric year in 2019 as well as one year of programming fundamentals at CTU in 2020 and am eager to enter the working world. 
+                        I am hardworking, honest, inquisitive, dedicated and a quick learner. I am passionate about skills development, self-improvement and learning new things because of this I feel that entering the working world sooner rather than later will give me a more hands on experience and allow me to learn more and explore more about the current field that I am in.
+    
+                    </p>
+                </div>
+        </div>
+
+    
+
+        <!-- Block for images -->
+        <div id="myWebBlock-img">
+            <a href="https://jordanb-itvarsity.github.io/Module-2-Assessment-1/"> <img src="images/Sites/Captur23e.PNG" ></a> 
+            <a href="https://jordanb-itvarsity.github.io/Module-3-Assessment-2/"> <img src="images/Sites/Capture2.PNG" ></a> 
+            <a href="https://jordanb-itvarsity.github.io/Module-5-Assessment-1/"> <img src="images/Sites/Captur1e.PNG" ></a> 
+        </div>
+
+        <!-- Block for links -->
+        <div class ="morePages">
+            <p>
+                These are a few websites that ive made previously made feel free to see more
+            </p>
+            <a href="previousSites.html">See More</a>
+        </div>
+    </div>
+
+
+    <script>
+        function openTab(evt, tabName) {
+  // Declare all variables
+    var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+    }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+    </script>
+</body>
+</html>
