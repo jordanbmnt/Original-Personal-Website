@@ -1,40 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 
-::-webkit-scrollbar{
-    width: 5px;
-    height: 1px;
-    }
+::-webkit-scrollbar {
+    width: 0;
+}
 
-    ::-webkit-scrollbar-thumb{
-    background: linear-gradient(150deg, #D13C17 8%,#E08B24 28%,#D1E028 47%,#37D65F 77%);
-    border-radius: 5em;
-    }
-
-    ::-webkit-scrollbar-thumb:hover{
-    background: linear-gradient(150deg, #46E346 18%,#057A0B 77%);
-    }
-
-    ::-webkit-scrollbar-track{
-    background: #f0f0f0e0;
-    border-radius: 0px;
-    box-shadow: inset -3.5px 3.7px 2px -4px #121010;
-    }
-
-html{
-    width: 100%;
-    height: 100%;
+html {
+    width: 100vw;
+    height: 100vh;
     margin: 0%;
 }
-body{
-    width: 100%;
+body {
+    width: 100vw;
     margin: 0%;
-
     /* ! stops the extra white from being shown */
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
-hr{
+hr {
     width: 80%;
     margin: 1em auto;
 }
@@ -45,7 +28,7 @@ hr{
 header {
     display: flex;
     flex-flow: column;
-    width: 100%;
+    width: 100vw;
     margin: 0%;
 }
 
@@ -55,115 +38,95 @@ header {
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: space-around;
-    padding: 2em;
-    padding-right: 0;
     margin: 0;
-    height: 12%;
-    width: 94%;
-    /* background-color: #463f3f; */
+    height: 12vh;
+    width: 100vw;
 }
 
-.topHeader > dropdown-content > div{
-    margin: auto;
-}
-
-
-.logo > a > img{
+.logo > a > img {
     width: 9em;
     padding-right: 0;
     margin-right: 0;
 }
 
-
-
-.links{
+.links {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
     height: 10px;
-    margin-top: 4%;
     text-align: center;
 }
 
-.links > a{
+.links > a {
     text-decoration: none;
     margin: 0.5em;
     padding: 1em;
     color: white;
     text-align: center;
-    margin-top: 3em;
+    font-family: "Major Mono Display", monospace;
+    font-size: 0.7rem;
 }
 
-
-.links > a:hover{
+.links > a:hover {
     color: brown;
 }
 
-
-.bottomHeader{
+.bottomHeader {
     margin: auto;
     padding: 1em;
     text-align: center;
 }
 
-.bottomHeader > h3{
+.bottomHeader > h3 {
     font-size: 2.5em;
     font-weight: 460;
 }
 
-.makeRed{
+.makeRed {
     color: brown;
     font-style: italic;
 }
 
-
-
-
-
-
 /* MAIN01////////////////////////////////// */
 
 /* Style of the entire main01 as a container */
-.main01{
+.main01 {
     color: rgb(128, 112, 112);
     width: 100%;
     margin: auto;
     padding-top: 6em;
     background-image: url("images/illustration-4564730_1920.jpg");
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
     padding-bottom: 4em;
 }
 
-#main01-intro-h1{
-    padding: 41px;
-    padding-bottom: 0;
-    margin-bottom: 0%;
+#main01-intro-h1 {
+    padding: 20px 41px;
+    margin: 0%;
     text-align: left;
-    font-size: 4em;
-    font-family: 'Major Mono Display', monospace;
+    font-size: 3rem;
+    font-family: "Major Mono Display", monospace;
     text-shadow: 1px 2px 12px rgba(19, 1, 1, 0.687);
 }
 
-#main01-intro-h3{
-    padding: 41px;
-    padding-top: 0.1em;
-    padding-bottom: 0.1em;
-    font-size: 2em;
+#main01-intro-h3 {
+    padding: 0 41px;
+    font-size: 1.7rem;
     text-align: left;
-    font-family: 'Major Mono Display', monospace;
+    font-family: "Major Mono Display", monospace;
     text-shadow: 1px 2px 12px rgba(19, 1, 1, 0.687);
 }
 
-#main01-intro-h5{
+#main01-intro-h5 {
     padding: 41px;
     padding-top: 0.1em;
     padding-bottom: 6em;
     text-align: left;
-    font-family: 'Major Mono Display', monospace;
+    font-family: "Major Mono Display", monospace;
     font-size: 1em;
     max-width: 400px;
     text-shadow: 1px 2px 12px rgba(19, 1, 1, 0.687);
@@ -174,10 +137,11 @@ header {
     overflow: hidden;
     display: flex;
     flex-flow: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-  /* Style the buttons that are used to open the tab content */
+/* Style the buttons that are used to open the tab content */
 .main01-tab button {
     color: white;
     background-color: inherit;
@@ -186,24 +150,23 @@ header {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 2em;
-    padding: 0.5em;
+    font-size: 1.1em;
 }
 
-  /* Change background color of buttons on hover */
+/* Change background color of buttons on hover */
 .main01-tab button:hover {
     color: brown;
     background-color: rgba(221, 221, 221, 0.318);
     border-radius: 3em;
 }
 
-  /* Create an active/current tablink class */
+/* Create an active/current tablink class */
 .main01-tab button.active {
     background-color: rgba(204, 204, 204, 0.359);
     border-radius: 3em;
 }
 
-  /* Style the tab content */
+/* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
@@ -216,124 +179,121 @@ header {
     animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 
-  /* Go from zero to full opacity */
+/* Go from zero to full opacity */
 @keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.codingImg{
+.codingImg {
     display: flex;
     flex-flow: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#tools-container > h4{
+#tools-container > h4,
+#lang-container > h4 {
     text-align: center;
     padding: 4em;
 }
 
-#lang-container > h4{
-    text-align: center;
-    padding: 4em;
-}
-
-#tools-imgGrid > img{
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba(12, 149, 234, 0.37), inset 0 8px 32px 0 rgba(12, 149, 234, 0.37);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba(12, 149, 234, 0.37);
+#tools-imgGrid > img,
+#lang-imgGrid > img {
+    background: rgba(255, 255, 255, 0.25);
     padding: 3em;
     margin: 2em 3em;
-    width: 10em;
-}
-
-#lang-imgGrid > img{
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba(12, 149, 234, 0.37), inset 0 8px 32px 0 rgba(12, 149, 234, 0.37);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    width: 10vw;
+    width: 10vw;
+    box-shadow: 0 8px 32px 0 rgba(12, 149, 234, 0.37),
+        inset 0 8px 32px 0 rgba(12, 149, 234, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
     border: 1px solid rgba(12, 149, 234, 0.37);
-    padding: 3em;
-    margin: 2em 3em;
-    width: 10em;
 }
-
-
 
 /* SELF////////////////////////////////// */
 
 /* Style of the entire self as a container */
-.self{
-    color: black;
-    width: 60%;
-    align-self: center;
-    margin: 4em 0;
+.self {
     display: flex;
     flex-flow: row;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba(156, 179, 163, 0.37);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 70vw;
+    color: black;
     padding: 3em;
+    margin: 4em 0;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(156, 179, 163, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    align-self: center;
 }
 
-.self > div{
+.self > div {
     margin: auto;
 }
 
-#personalInfo{
-    padding: 2em;
+#personalInfo {
+    padding: 1em;
 }
 
-#yinyangPic > img{
-    width: 35vw;
+#yinyangPic > img {
+    width: 30vw;
 }
-
 
 /* MAIN02////////////////////////////////// */
 
 /* Style of the entire main02 as a container */
-.main02{
+.main02 {
     display: flex;
     flex-flow: column;
+    align-items: center;
     color: white;
-    width: 100%;
+    width: 100vw;
     margin: auto;
     margin-right: 0;
-    background-image: url('images/astronaut-1388582_1920.jpg');
+    background-image: url("images/astronaut-1388582_1920.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
+.main02 > #myWebBlock-img {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100vw;
+}
+
 /* Puctures of the sites that ive made before */
-.main02 > #myWebBlock-img >a > img{
-    width: 90%;
+.main02 > #myWebBlock-img > a > img {
+    width: 25vw;
     border-radius: 1em;
 }
 
 /* More Pages as a whole */
-.morePages{
+.morePages {
     display: flex;
     flex-flow: column;
 }
 
 /* More Pages info */
-.morePages > p{
+.morePages > p {
     text-align: center;
     color: black;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 /* More pages Button */
-.morePages > a{
+.morePages > a {
     color: white;
     text-decoration: none;
     border-radius: 28px;
@@ -344,40 +304,16 @@ header {
     text-align: center;
 }
 
-
-#myWebBlock-img{
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-    margin: 4em 0;
-}
-
-#myWebBlock-img > a >  img{
-    width: 20em;
-}
-
-
-
-
-
 /* RESPONSIVE SIDE */
 @media screen and (min-width: 600px) {
-
-    .dropbtn{
+    .dropbtn {
         display: none;
     }
-
 }
 
 @media screen and (max-width: 600px) {
-
-    header > .dropdown{
+    header > .dropdown {
         right: 0%;
-    }
-
-    .logo > a > img{
-        width: 8em;
-        padding-left: 0;
     }
 
     .dropbtn {
@@ -391,26 +327,25 @@ header {
         height: 60px;
         border-radius: 0 0 1em 0;
     }
-    
+
     .dropdown {
         position: fixed;
         display: inline-block;
         width: 100px;
         z-index: 500;
     }
-    
+
     .dropdown-content {
         display: none;
         position: absolute;
         background-color: #137b16;
         min-width: 160px;
         z-index: 1;
-        border-radius: 0 1em ;
+        border-radius: 0 1em;
         background: #137b16;
-        box-shadow:  9px 9px 26px #031604c9,
-        -9px -9px 26px #189c1c;
+        box-shadow: 9px 9px 26px #031604c9, -9px -9px 26px #189c1c;
     }
-    
+
     .dropdown-content a {
         color: white;
         padding: 12px 16px;
@@ -420,10 +355,10 @@ header {
         text-align: center;
     }
 
-    .dropdown-content > .links{
+    .dropdown-content > .links {
         padding: 2.6em;
     }
-    
+
     .dropdown:hover .dropdown-content {
         display: inline-block;
         left: 0;
@@ -432,9 +367,8 @@ header {
         padding-top: 5em;
         width: 20%;
         height: 100vh;
-        animation: fadeEffectMenu .5s; /* Fading effect takes 1 second */
+        animation: fadeEffectMenu 0.5s; /* Fading effect takes 1 second */
     }
-    
 
     @keyframes fadeEffectMenu {
         from {
@@ -447,11 +381,14 @@ header {
         }
     }
 
+    /* SELF//////////////////////// */
 
-
-/* SELF//////////////////////// */
-
-    .self{
+    .self {
         flex-flow: column;
+    }
+
+    #tools-imgGrid > img,
+    #lang-imgGrid > img {
+        width: 25vw;
     }
 }
